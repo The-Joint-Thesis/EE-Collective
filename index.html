@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta / SEO -->
+  <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="1XRoakRmsqyMFZMYLiLLR7ZIH06Iv0o846F-f0-U95Y" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EE Collective</title>
+  <meta name="description" content="EE Collective – Open-access Electrical Engineering books and resources, created by EE students for EE students." />
+  <link rel="icon" type="image/png" href="https://i.ibb.co/s9g6chXV/github-1051377.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- App assets -->
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+
+      <!-- Brand -->
+      <a href="#hero" class="brand">
+        <img src="logo.webp" alt="EE Collective logo" class="brand-logo-img" />
+        <div class="brand-title">EE Collective</div>
+      </a>
+
+      <nav class="nav">
+        <!-- Mobile toggle -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+
+        <!-- Primary links -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#books">Books</a></li>
+          <li><a href="#how-it-helps">Why this project</a></li>
+          <li><a href="#authors">Authors</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+
+        <!-- Copy -->
+        <div class="hero-left">
+          <p class="chip chip-soft" data-animate="fade-in-down">
+            By <strong>Shreyash Dwivedi</strong> &amp; <strong>Ratandeep Choudhary</strong>
+          </p>
+
+          <h1 data-animate="fade-in-up">
+            Power systems,</br>
+            <span class="accent-text">Ascentia SCI Lab</span><br/>
+            Think and Learn.
+          </h1>
+
+          <p class="hero-subtitle" data-animate="fade-in-up" data-delay="0.1">
+            Two open-access books that combine fundamentals, real institute data,
+            and hands-on simulation using SCI Lab.
+          </p>
+
+          <div class="hero-actions" data-animate="fade-in-up" data-delay="0.2">
+            <a href="#books" class="btn btn-ghost">Explore contents</a>
+          </div>
+
+          <!-- Meta info -->
+          <div class="hero-meta" data-animate="fade-in-up" data-delay="0.3">
+            <div class="meta-item">
+              <span class="meta-label">Format</span>
+              <span class="meta-value">PDF · Free access</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Focus</span>
+              <span class="meta-value">Power, data, simulation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual preview -->
+        <div class="hero-right" data-animate="fade-in-left">
+          <div class="preview-frame">
+            <div class="preview-header">
+              <div class="dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="preview-title">Project snapshot</span>
+            </div>
+
+            <div class="preview-body">
+              <div class="preview-stat-row">
+                <div class="preview-stat">
+                  <span class="preview-stat-label">Books</span>
+                  <span class="preview-stat-value">2</span>
+                </div>
+                <div class="preview-stat">
+                  <span class="preview-stat-label">Discipline</span>
+                  <span class="preview-stat-value">EE</span>
+                </div>
+                <div class="preview-stat">
+                  <span class="preview-stat-label">Access</span>
+                  <span class="preview-stat-value">Open</span>
+                </div>
+              </div>
+
+              <!-- Decorative chart -->
+              <div class="preview-chart">
+                <div class="preview-chart-track"></div>
+                <div class="preview-chart-bars">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <p class="preview-caption">
+                From fundamentals and phasor diagrams to SCI Lab scripts.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Why / Carousel -->
+    <section class="section section-alt" id="how-it-helps">
+      <div class="container">
+        <div class="row-flex">
+
+          <!-- Carousel -->
+          <div class="preview-frame project-frame" data-animate="fade-in-up">
+            <div class="preview-header">
+              <div class="dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="preview-title">Why this project exists</span>
+            </div>
+
+            <div class="preview-body project-body">
+              <p class="project-intro">
+                Built from our late nights so yours can be a little easier.
+              </p>
+
+              <div class="project-carousel">
+                <div class="project-track" id="projectTrack">
+
+                  <!-- Slides -->
+                  <article class="project-card">
+                    <h3>Grounded in real systems</h3>
+                    <p>Uses actual institute power-system data.</p>
+                  </article>
+
+                  <article class="project-card">
+                    <h3>From paper to simulation</h3>
+                    <p>Concepts mirrored in SCI Lab code and plots.</p>
+                  </article>
+
+                  <article class="project-card">
+                    <h3>Open & remixable</h3>
+                    <p>Free to reuse with attribution.</p>
+                  </article>
+
+                  <article class="project-card">
+                    <h3>For EE, by EE</h3>
+                    <p>Written by students for students.</p>
+                  </article>
+
+                </div>
+
+                <!-- Pagination dots -->
+                <div class="project-indicators" id="projectIndicators">
+                  <span class="indicator active"></span>
+                  <span class="indicator"></span>
+                  <span class="indicator"></span>
+                  <span class="indicator"></span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Usage notes -->
+          <div class="column" data-animate="fade-in-left">
+            <div class="preview-frame note-frame">
+              <div class="preview-header">
+                <div class="dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="preview-title">How to use it</span>
+              </div>
+              <div class="preview-body note-card">
+                <h3>Use it like a toolkit</h3>
+                <ul class="note-list">
+                  <li>Pre-read before lectures.</li>
+                  <li>Reuse SCI Lab templates.</li>
+                  <li>Plug in real measurements.</li>
+                  <li>Adapt figures for reports.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Books -->
+    <section class="section" id="books">
+      <div class="container">
+        <header class="section-header" data-animate="fade-in-up">
+          <h2>The books</h2>
+          <p>Concepts + simulation, designed to complement each other.</p>
+        </header>
+
+        <div class="grid books-list">
+
+          <!-- Book card -->
+          <article class="card book-card" data-animate="fade-in-up">
+            <div class="book-layout">
+
+              <div class="book-cover-side">
+                <img src="First Principles Of Power.webp"
+                     alt="First Principles of Power Book Cover"
+                     class="book-cover-img" />
+              </div>
+
+              <div class="book-details-side">
+                <div class="card-label-row">
+                  <span class="chip chip-strong chip-outline">First Principles of Power</span>
+                  <span class="pill pill-soft">Published</span>
+                </div>
+
+                <h3>Understand how power actually flows.</h3>
+
+                <p class="card-body-text">
+                  Structured introduction to generation, transmission, and distribution
+                  using real institute data.
+                </p>
+
+                <ul class="card-list">
+                  <li>Core EE recap.</li>
+                  <li>Real-world values.</li>
+                  <li>Campus system as dataset.</li>
+                </ul>
+
+                <!-- TOC Toggle -->
+                <div class="toc-wrapper">
+                  <button class="toc-toggle" aria-expanded="false" aria-controls="toc-fpp">
+                    <span class="toc-toggle-label">Table of Contents</span>
+                    <span class="toc-chevron">&#9660;</span>
+                  </button>
+                  <div class="toc-body" id="toc-fpp" hidden>
+                    <ol class="toc-list">
+                      <li><strong>Welcome to Electrical Engineering <span class="toc-page">1–2</span></strong></li>
+                      <li><strong>Our Institute, Our Grid <span class="toc-page">3–8</span></strong></li>
+                      <li><strong>Core Concepts of Power Systems <span class="toc-page">9–13</span></strong></li>
+                      <li><strong>Understanding the Grid &amp; Subsystems <span class="toc-page">14–18</span></strong></li>
+                      <li><strong>The Reality of Loads – Variable Power Demand <span class="toc-page">19–24</span></strong></li>
+                      <li><strong>Smart Power – Load Calculations &amp; Key Factors <span class="toc-page">25–29</span></strong></li>
+                      <li><strong>Institute Energy Analytics <span class="toc-page">30–34</span></strong></li>
+                      <li><strong>Electrical Distribution System of the Institute <span class="toc-page">35–37</span></strong></li>
+                      <li><strong>Power Quality and Energy Efficiency in the Institute <span class="toc-page">38–39</span></strong></li>
+                      <li><strong>Renewable Energy and Sustainable Power Solutions <span class="toc-page">40–41</span></strong></li>
+                      <li><strong>The Future of Electrical Power Systems and the Engineer's Role <span class="toc-page">42–43</span></strong></li>
+                      <li><strong>Discover, Build, Innovate <span class="toc-page">44–45</span></strong></li>
+                      <li><strong>Key Formulas <span class="toc-page">46–47</span></strong></li>
+                      <li><strong>Recent Trends in Power Utilization <span class="toc-page">48–49</span></strong></li>
+                      <li><strong>References and Further Reading <span class="toc-page">50–51</span></strong></li>
+                    </ol>
+                  </div>
+                </div>
+
+                <div class="card-actions">
+                  <a href="https://drive.google.com/file/d/1yP7YJvRbtk_UkjPMzk_53zntyQsPNSKb/view?usp=drive_link" class="btn btn-primary" target="_blank" rel="noopener"> 
+                    Read online
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Book card -->
+          <article class="card book-card" data-animate="fade-in-up" data-delay="0.1">
+            <div class="book-layout">
+
+              <div class="book-cover-side">
+                <img src="Ascentia SCI Lab.webp"
+                     alt="Ascentia SCI Lab Book Cover"
+                     class="book-cover-img" />
+              </div>
+
+              <div class="book-details-side">
+                <div class="card-label-row">
+                  <span class="chip chip-strong chip-outline">Ascentia SCI Lab</span>
+                  <span class="pill pill-soft-glow ">Published</span>
+                </div>
+
+                <h3>Turn concepts into code and plots.</h3>
+
+                <p class="card-body-text">
+                  Practical SCI Lab workflows tied directly to power system topics.
+                </p>
+
+                <ul class="card-list">
+                  <li>SCI Lab fundamentals.</li>
+                  <li>Plotting and analysis.</li>
+                  <li>Chapter-aligned examples.</li>
+                </ul>
+
+                <!-- TOC Toggle -->
+                <div class="toc-wrapper">
+                  <button class="toc-toggle" aria-expanded="false" aria-controls="toc-asl">
+                    <span class="toc-toggle-label">Table of Contents</span>
+                    <span class="toc-chevron">&#9660;</span>
+                  </button>
+                  <div class="toc-body" id="toc-asl" hidden>
+                    <ol class="toc-list">
+                      <li><strong>Part I - Foundations of Electrical Simulation</strong>
+                        <ol>
+                          <li>What Is Electrical Simulation <span class="toc-page">1–5</span></li>
+                          <li>Core Electrical Concepts for Simulation <span class="toc-page">6–8</span></li>
+                          <li>Components Used in Electrical &amp; Electronics Simulation <span class="toc-page">9–12</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part II - Introduction to SCI Lab</strong>
+                        <ol>
+                          <li>Installing and Setting Up Scilab <span class="toc-page">13–25</span></li>
+                          <li>Understanding Scilab Interface <span class="toc-page">26–32</span></li>
+                          <li>Building Your First Simple Circuit <span class="toc-page">33–38</span></li>
+                          <li>Assignments and Practice Projects <span class="toc-page">39–41</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part III - Basic Electronics Circuit Simulation</strong>
+                        <ol>
+                          <li>Sources and Basic Components in Simulation <span class="toc-page">42–48</span></li>
+                          <li>Diode and Transistor Circuit Simulation <span class="toc-page">49–54</span></li>
+                          <li>OP-Amp Based Circuits <span class="toc-page">55–59</span></li>
+                          <li>Voltage Regulator Circuits <span class="toc-page">60–68</span></li>
+                          <li>Assignments &amp; Mini Projects <span class="toc-page">69–73</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part IV - Digital Circuit Simulation</strong>
+                        <ol>
+                          <li>Boolean Algebra and Digital Basics <span class="toc-page">74–78</span></li>
+                          <li>Logic Gates in Simulation <span class="toc-page">79–83</span></li>
+                          <li>Flip-Flops and Sequential Circuits <span class="toc-page">84–88</span></li>
+                          <li>Arithmetic Circuits <span class="toc-page">89–96</span></li>
+                          <li>Counters &amp; Shift Registers <span class="toc-page">97–103</span></li>
+                          <li>Assignments and Mini Projects <span class="toc-page">104–108</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part V - Electrical Machines &amp; Power System Simulation</strong>
+                        <ol>
+                          <li>Magnetic Circuit Fundamentals <span class="toc-page">109–115</span></li>
+                          <li>Transformer Simulation <span class="toc-page">116–121</span></li>
+                          <li>DC Motor Simulation <span class="toc-page">122–129</span></li>
+                          <li>Induction Motor Simulation <span class="toc-page">130–139</span></li>
+                          <li>Synchronous Motor Simulation <span class="toc-page">140–149</span></li>
+                          <li>Power System Fault Analysis <span class="toc-page">150–163</span></li>
+                          <li>Assignments &amp; Mini Projects <span class="toc-page">164–166</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part VI - Arduino</strong>
+                        <ol>
+                          <li>Introduction to Arduino and Physical Computing <span class="toc-page">167–172</span></li>
+                          <li>Arduino Hardware Architecture and Board-Level Understanding <span class="toc-page">173–203</span></li>
+                          <li>Installing Arduino IDE and Learning the Development Workflow <span class="toc-page">204–224</span></li>
+                          <li>Arduino Programming and Interfacing Fundamentals <span class="toc-page">225–257</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part VII - Lab Activity</strong>
+                        <ol>
+                          <li>Complete Practical Guide <span class="toc-page">258–277</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part VIII - Advanced Topics &amp; Exploration</strong>
+                        <ol>
+                          <li>Advanced Debugging &amp; Numerical Stability in Simulation <span class="toc-page">278–294</span></li>
+                          <li>Modelling Accuracy and Real World Limitations <span class="toc-page">295–304</span></li>
+                          <li>Transitioning to Real Hardware <span class="toc-page">305–333</span></li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+
+                <div class="card-actions">
+                  <a href="https://drive.google.com/file/d/1qH4FKKU5yCWySrBiklzZaCsTiHuOFI5l/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">
+                    Read Online
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Authors -->
+    <section class="section section-alt" id="authors">
+      <div class="container two-column">
+
+        <div class="column" data-animate="fade-in-right">
+          <h2>About the authors</h2>
+          <p class="lead">
+            Built from our own notes, mistakes, and iteration.
+          </p>
+
+          <div class="author-grid">
+            <div class="author-box">Shreyash Dwivedi</div>
+            <div class="author-box">Ratandeep Choudhary</div>
+          </div>
+
+          <p class="small">
+            Suggestions and contributions are welcomed.
+          </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="column" data-animate="fade-in-left">
+          <div class="note-card">
+            <h3>Get in touch</h3>
+
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Email</span>
+                <a href="mailto:sdee001@proton.me">sdee001@proton.me</a>
+              </li>
+              <li>
+                <span class="contact-label">Email</span>
+                <a href="mailto:ratandeepkingiafc@tutamail.com">ratandeepkingiafc@tutamail.com</a>
+              </li>
+              <li>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/SDee001/EE-Collective" target="_blank" rel="noopener">
+                  EE-Collective
+                </a>
+              </li>
+            </ul>
+
+            <!-- Citation -->
+            <h4 class="cite-heading">How to reference</h4>
+            <code class="cite-block">
+Shreyash Dwivedi and Ratandeep Choudhary,
+"First Principles of Power" & "Ascentia SCI Lab",
+open-access digital books, 2025.
+Available at: sdee001.github.io/EE-Collective/
+            </code>
+
+
+             <!-- Did you learn Something? -->
